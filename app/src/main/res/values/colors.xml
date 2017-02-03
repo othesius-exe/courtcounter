@@ -5,10 +5,15 @@
     <color name="colorAccent">#FF4081</color>
 
     <!-- team a colors -->
-
-
+    <color name="redButton">#F44336</color>
+    <color name="redText">#0D47A1</color>
+    <color name="redTitle">#B71C1C</color>
 
     <!-- team b colors -->
+    <color name="blueButton">#2196F3</color>
+    <color name="blueText">#B71C1C</color>
+    <color name="blueTitle">#0D47A1</color>
 
-
+    <!-- reset button -->
+    <color name="resetButton">#66BB6A</color>
 </resources>
