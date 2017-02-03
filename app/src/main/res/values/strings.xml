@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Court Counter</string>
+
+    <!-- Team names here -->
+    <string name="home">Home</string>
+    <string name="away">Away</string>
+    <string name="homeScore">0</string>
+    <string name="awayScore">0</string>
+
+    <!--Button text here -->
+    <string name="threePoint">+ 3 Points</string>
+    <string name="twoPoint">+ 2 Points</string>
+    <string name="freeThrow">Free Throw</string>
+
+</resources>
