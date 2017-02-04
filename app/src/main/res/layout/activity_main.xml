@@ -11,8 +11,9 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/redTeam"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             tools:context="com.example.android.courtcounter.MainActivity"
@@ -77,7 +78,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             tools:context="com.example.android.courtcounter.MainActivity"
@@ -136,6 +137,16 @@
 
     </LinearLayout>
 
+    <!-- Reset button -->
+
+    <TextView
+        android:id="@+id/centerLine"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -145,6 +156,123 @@
         android:layout_alignParentBottom="true"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
+        />
+
+    <!-- Stats Buttons -->
+
+    <TextView
+        android:id="@+id/redStatsButton"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_alignTop="@id/centerLine"
+        android:text="@string/redStats"
+        android:background="@color/redButton"
+        android:textColor="@color/redText"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/blueStatsButton"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_alignTop="@id/centerLine"
+        android:text="@string/blueStats"
+        android:background="@color/blueButton"
+        android:textColor="@color/blueText"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <!-- Red Stats -->
+
+    <TextView
+        android:id="@+id/red_three_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="@string/redThrees"
+        android:layout_below="@+id/redStatsButton"
+        android:layout_marginLeft="15dp"
+        android:paddingRight="40dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/red_two_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_toRightOf="@+id/red_three_view"
+        android:text="@string/redTwos"
+        android:layout_below="@+id/redStatsButton"
+        android:paddingRight="40dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/red_free_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_toRightOf="@+id/red_two_view"
+        android:text="@string/redFrees"
+        android:layout_below="@+id/redStatsButton"
+        android:paddingRight="40dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <!-- blue stats -->
+
+    <TextView
+        android:id="@+id/blue_three_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/blueThrees"
+        android:layout_below="@+id/blueStatsButton"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="40dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/blue_two_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:text="@string/blueTwos"
+        android:layout_below="@+id/blueStatsButton"
+        android:layout_toLeftOf="@+id/blue_three_view"
+        android:paddingLeft="40dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/blue_free_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:text="@string/blueFrees"
+        android:layout_below="@+id/blueStatsButton"
+        android:layout_toLeftOf="@+id/blue_two_view"
+        android:textSize="25sp"
+        android:textStyle="bold"
         />
 
 </RelativeLayout>
