@@ -25,6 +25,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/home"
                 android:textAllCaps="true"
                 android:textSize="20sp"
@@ -41,40 +42,56 @@
                 android:layout_marginBottom="8dp"
                 android:text="@string/awayScore"
                 android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="50sp"/>
 
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
                 android:onClick="threePointer"
                 android:text="@string/threePoint"
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:background="@color/redButton"
                 android:textColor="@color/redText"/>
 
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
                 android:onClick="twoPointer"
                 android:text="@string/twoPoint"
+                android:textStyle="bold"
+                android:textSize="18sp"
                 android:background="@color/redButton"
                 android:textColor="@color/redText"/>
 
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
                 android:onClick="freeThrow"
                 android:text="@string/freeThrow"
+                android:textStyle="bold"
+                android:textSize="16sp"
                 android:background="@color/redButton"
                 android:textColor="@color/redText"/>
 
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/verticalCenter"
+            android:layout_width="1dp"
+            android:layout_height="375dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="35dp"/>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -90,6 +107,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/away"
                 android:textAllCaps="true"
                 android:textSize="20sp"
@@ -105,32 +123,41 @@
                 android:layout_marginBottom="8dp"
                 android:text="@string/awayScore"
                 android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="50sp"/>
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
                 android:onClick="threePointerB"
                 android:text="@string/threePoint"
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:background="@color/blueButton"
                 android:textColor="@color/blueText"/>
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
                 android:onClick="twoPointerB"
                 android:text="@string/twoPoint"
+                android:textStyle="bold"
+                android:textSize="18sp"
                 android:background="@color/blueButton"
                 android:textColor="@color/blueText"/>
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
                 android:onClick="freeThrowB"
                 android:text="@string/freeThrow"
+                android:textStyle="bold"
+                android:textSize="16sp"
                 android:background="@color/blueButton"
                 android:textColor="@color/blueText"/>
         </LinearLayout>
@@ -153,7 +180,7 @@
         android:background="@color/resetButton"
         android:onClick="resetScores"
         android:text="@string/resetButton"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="450dp"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
         />
@@ -162,12 +189,12 @@
 
     <TextView
         android:id="@+id/redStatsButton"
-        android:layout_width="125dp"
+        android:layout_width="192dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="75dp"
         android:layout_alignTop="@id/centerLine"
         android:text="@string/redStats"
         android:background="@color/redButton"
@@ -175,17 +202,16 @@
         android:gravity="center"
         android:textSize="24sp"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="5dp"
         />
 
     <TextView
         android:id="@+id/blueStatsButton"
-        android:layout_width="125dp"
+        android:layout_width="192dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="75dp"
         android:layout_alignTop="@id/centerLine"
         android:text="@string/blueStats"
         android:background="@color/blueButton"
@@ -193,7 +219,6 @@
         android:gravity="center"
         android:textSize="24sp"
         android:layout_marginBottom="20dp"
-        android:layout_marginRight="5dp"
         />
 
     <!-- Red Stats -->
@@ -210,11 +235,13 @@
         android:textSize="25sp"
         android:textStyle="bold"
         />
+
     <TextView
         android:id="@+id/red_two_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
         android:layout_toRightOf="@+id/red_three_view"
         android:text="@string/redTwos"
         android:layout_below="@+id/redStatsButton"
